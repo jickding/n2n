@@ -3,7 +3,7 @@ N2N_VERSION="1.3.2"
 
 ########
 
-CC=gcc
+#CC=gcc
 DEBUG?=-g
 WARN?=-Wall -Wshadow -Wpointer-arith -Wmissing-declarations -Wnested-externs
 
@@ -65,8 +65,8 @@ clean:
 install: edge supernode edge.8.gz supernode.1.gz
 	echo "MANDIR=$(MANDIR)"
 	$(MKDIR) $(BINDIR) $(SBINDIR) $(MAN1DIR) $(MAN8DIR)
-	$(INSTALL_PROG) supernode $(BINDIR)/
-	$(INSTALL_PROG) edge $(SBINDIR)/
+	$(INSTALL_PROG) supernode $(BINDIR)/supernode_v1
+	$(INSTALL_PROG) edge $(SBINDIR)/edge_v1
 	$(INSTALL_DOC) edge.8.gz $(MAN8DIR)/
 	$(INSTALL_DOC) supernode.1.gz $(MAN1DIR)/
 

@@ -9,7 +9,6 @@ edge
 gnutls/
 libn2n.a
 libscm.a
-Makefile
 supernode
 test
 *.vcxproj
