@@ -51,6 +51,8 @@ set(CMAKE_CXX_FLAGS_DEBUG "-g")
 # Release
 set(CMAKE_C_FLAGS_RELEASE "-O2 -DNDEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
+
+INCLUDE_DIRECTORIES(../../../lib/include/)
 endif(NOT WIN32)
 
 #for macOS, add openssl include dir
