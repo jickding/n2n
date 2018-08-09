@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.6)
 # N2n information
 set(N2N_VERSION 2.1.0)
 set(N2N_OSNAME ${CMAKE_SYSTEM})
+SET(CMAKE_INSTALL_PREFIX "/usr")
 
 # N2n specific params
 if(NOT DEFINED N2N_OPTION_AES)
